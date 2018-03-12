@@ -1,7 +1,7 @@
 // TESTATO SU WINDOWS 10
 #include <iostream>
 #include <fstream>
-#include <windows.h>
+#include <string>
 using namespace std;
 
 // STRUTTURE:
@@ -180,8 +180,10 @@ bool compreso(impegno agenda[], int pos, giorno cerca){
 
 // FUNZIONI:
 void change_color(unsigned short color){
+	/* TODO: Windows only
     HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hOut,color);
+	*/
 }
 void header(){
     change_color(7);
